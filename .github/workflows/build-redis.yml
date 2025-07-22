@@ -197,8 +197,8 @@ jobs:
           tar -xzf redis-${{ env.RELEASE_VERSION }}.tar.gz ;
           cd redis-${{ env.RELEASE_VERSION }}/src && ./mkreleasehdr.sh ;
           sed -i 's/\"\;/\"/' asciilogo.h ;
-          echo '" Redis for Windows Project Home \n"' >> asciilogo.h ;
-          echo '" https://github.com/redis-windows/redis-windows  \n\n";' >> asciilogo.h ;
+          echo '" Redis for yukuaixie \n"' >> asciilogo.h ;
+          echo '"  yukuaixie \n\n";' >> asciilogo.h ;
           cd .. ;
           make BUILD_TLS=yes CFLAGS="-Wno-char-subscripts -O0" -j$(nproc) ;
           cd $workspace ;
